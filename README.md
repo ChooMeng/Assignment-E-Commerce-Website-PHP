@@ -1,4 +1,4 @@
-![lkresize](https://user-images.githubusercontent.com/86212287/135401828-23232f9f-395e-46e7-906e-9887bacf424f.png)
+![logo (1)](https://user-images.githubusercontent.com/86212287/135457458-362085ed-f26d-496f-a514-f8d853a16a2e.png)
 
 # Daily Market - E-Commerce Website (PHP)
 
