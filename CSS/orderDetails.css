@@ -1,0 +1,185 @@
+.orderdetail {
+    overflow: auto;
+}
+
+.tableSect {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#orderInfo {
+    font-size: 15px;
+    line-height: 10px;
+}
+
+#orderInfo span {
+    font-size: 20px;
+    color: #596066;
+}
+
+#orderInfo p{
+    margin: 10px 0px;
+}
+
+#tableHeader th {
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 500%;
+}
+
+#totalPayment {
+    float: right;
+    font-size: 2.0em;
+}
+
+#totalPayment strong { color: #6c757d; }
+
+#itemDetails {
+    padding-bottom: 2% 0;
+}
+
+#shppingAddress tr td:first-child {
+    font-size: 30px;
+}
+
+#totSummary {
+    float: right;
+    line-height: 30px;
+    margin-right: 3%;
+}
+#totSummary td:first-child { font-size: 15px; }
+#totSummary td:last-child {
+    font-size: 20px;
+    float: right;
+}
+
+#cancelOrderBtn {
+    float: right;
+    border: none;
+    background-color: rgb(248, 52, 52);
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+#cancelOrderBtn:hover {
+    font-size: 20px;
+    background-color: rgb(255, 104, 104);
+}
+
+#cancelOrderBlock {
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:3;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    padding-top:100px;
+    background-color: rgb(0,0,0,0.4);
+    display: none;
+  }
+  
+  #cancelOrderContent {
+    position: relative;
+    margin: 0px auto;
+    background-color: #84d2fc;
+    width: 50%;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  #cancelOrderContent h1 {
+    padding: 2% 0%;
+    font-size: 30px;
+    color: white;
+  }
+  
+  #cancelOrderButton {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 2% 0%;
+  }
+  
+  #cancelOrderContent button {
+    width: 40%;
+    padding: 1% 0%;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    margin: 2% 0px;
+  }
+  
+  .cancelOrderYes {
+    display:inline-block;
+    width: 135px;
+    margin-bottom: 10px;
+    background-color: rgb(71, 250, 71);
+    padding:10px 20px;
+    border-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+    border: none;
+  }
+  
+  .cancelOrderYes:hover {
+    background-color: #5cb85c;
+    cursor:pointer;
+  }
+  
+  .cancelOrderNo {
+    display:inline-block;
+    width: 145px;
+    background-color: rgb(248, 52, 52);
+    margin-left:2%;
+    padding:10px 20px;
+    border-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+    border: none
+  }
+  
+  .cancelOrderNo:hover {
+    background-color: rgba(192, 15, 15, 0.767);
+    cursor:pointer;
+  }
+  #mainContent {
+  padding: 0% 10%;
+  background-color: white;
+  overflow: auto;
+}
+
+.mainHeader {
+  font-size: 2.0em;
+  font-weight: bold;
+  line-height: 70px;
+  font-family: 'Lora';
+  margin-top: 10px;
+  margin-bottom:0px;
+}
+#back{
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: #fd7e14;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition: 0.5s;
+    font-weight:bold;
+}
+#back:hover{
+    background-color: #fdae19;
+    color:white;
+}
+.productImg {
+    width: 100px;
+    height: 100px;
+}

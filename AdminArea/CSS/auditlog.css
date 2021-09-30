@@ -1,0 +1,244 @@
+/*Bar of display order amount of each type and create new order button*/
+.auditMenu{
+    margin: 0px 5%;
+    
+}
+.auditMenu>p{
+    display:inline-block;
+    margin-left: 8px;
+    background-color: lightgray;
+    padding-right: 10px;
+    color:black;
+    cursor:pointer;
+}
+.auditMenu>p:hover{
+    color:white;
+    background-color:gray;
+}
+.amount{
+    display:inline-block;
+    background-color:black;
+    padding: 4px 10px;
+    color:white;
+    border: gray 2px solid;
+    margin-right: 5px;
+}
+/*Search Bar*/
+.filter{
+    margin: 0px 0px;
+    padding: 10px;
+    background-color: #5270abf3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.bar{
+    text-align:right;
+    
+}
+.searchBar{
+    
+    text-align:left;
+    border: 3px solid #ddd;
+    padding: 0px 10px;
+    margin-right: -4px;
+    height: 30px;
+    width:200px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#searchIcon{
+    font-size:16px;
+    background-color: rgb(207, 204, 204);
+    border: 3px solid rgb(207, 204, 204);
+    border-right:none;
+    padding: 6px 10px 8px;
+}
+/*Audit Log*/
+#table{
+    min-height:67vh;
+    background-color: lightgray;
+}
+table{
+    width:100%;
+    font-size:24px;
+    border-collapse: collapse;
+    margin: 0px auto;
+    word-wrap: break-word;
+    
+}
+tr{
+    width:100%;
+}
+td,th{
+    border: 1px solid white;
+    padding: 4px;
+    
+}
+th{
+    background-color: #34629d;
+    color:white;
+    cursor:pointer;
+}
+td{
+    font-size:18px;
+    text-align:center;
+    background-color: #9fbee9;
+    color:black;
+}
+
+@media screen and (max-width: 1000px) {
+    table{
+        font-size:18px;
+        
+    }
+    td{
+        font-size:14px;
+    }
+}
+@media screen and (max-width: 700px) {
+    table{
+        font-size:12px;
+    }
+    th{
+        font-size:12px;
+    }
+    td{
+        font-size:8px;
+    }
+}
+@media screen and (max-width: 400px) {
+    table{
+        font-size:10px;
+    }
+    th{
+        font-size:10px;
+    }
+    td{
+        font-size:8px;
+    }
+    td,th{
+        word-break:break-all;
+    }
+}
+@media screen and (max-width: 350px) {
+    table{
+        font-size:8px;
+    }
+    td{
+        font-size:6px;
+    }
+    
+}
+/*Action button*/
+td button{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    color:white;
+    border-color: #46b8da;
+    background-color:#5bc0de;
+    outline:none;
+    width:70px;
+}
+td button:hover{
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+td button:active{
+    outline:none;
+}
+#details{
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color:white;
+}
+#details:hover{
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+#details:focus{
+    outline:none;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+}
+#details:active{
+   background-color: #31b0d5;
+    border-color: #269abc;
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notification:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notification{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+#sort{ /*Sort icon*/
+    float:right;
+    padding-top:3px;
+}
+/*Page number*/
+#page{
+    text-align:center;
+}
+#pageNumber{
+    display:inline-block;
+    text-align:center;
+    margin: 15px 5px;
+    font-size: 0px;
+}
+#pageNumber a:not(.current):not(.backward):not(.forward):not(:hover){
+    background-color:white;
+}
+#pageNumber a:not(.current):not(.backward):not(.forward){
+    
+    color:black;
+    text-decoration: none;
+    transition: background-color .3s;
+    padding: 10px 15px;
+    cursor:pointer;
+    font-size:16px;
+}
+#pageNumber a.forward,#pageNumber a.backward{
+    background-color:#c0e8fc;
+    color:black;
+    text-decoration: none;
+    transition: background-color .3s;
+    padding: 10px 10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.current{
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    transition: background-color .3s;
+    padding: 10px 15px;
+    cursor:pointer;
+    font-size:16px;
+}
+#pageNumber a:hover:not(.current){
+    background: #ddf;
+}

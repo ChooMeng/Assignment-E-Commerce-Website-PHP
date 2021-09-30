@@ -1,0 +1,22 @@
+.topNavBar {
+  height: 100%;
+  position: static;
+  z-index: 1;
+  background-color: #c3eaff;
+  overflow: auto;
+  font-size:0px;
+}
+
+.topNavBar a, #rightSide {
+  padding: 1% 2%;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+}
+
+.topNavBar a:hover , .topNavBar .active {
+  color: #03071e;
+  font-weight: bold;
+  background-color: #81bada;
+}

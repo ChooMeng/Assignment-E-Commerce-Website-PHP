@@ -1,0 +1,102 @@
+section {
+    overflow: auto;
+    padding: 2% 5%;
+}
+
+#background{
+    width: 100%;
+    margin: 0 auto;
+    object-fit: scale-down;
+    overflow: auto;
+    margin: 2% auto;
+    text-align: center;
+    display: absolute;
+    max-width: 100%;
+}
+.title{
+    text-align: center;
+    font-family: 'Lora';
+}
+
+#aboutUsStatement {
+    font-size: 1.2em;
+    padding: 2% 3%;
+    color: rgb(83, 83, 83);
+    background-color: rgb(20, 247, 224);
+    text-align: justify;
+}
+#aboutUsStatement:hover{
+    background-color: turquoise;
+}
+@media screen and (max-width: 450px) {
+    #aboutUsImg>img{
+        width:150px;
+    }
+}
+#core{
+    margin: auto;
+    padding: 20px 20px 30px;
+    display: block;
+    color: rgb(83, 83, 83);
+}
+    
+#core table {
+    margin: auto;
+}
+
+#core tr td, #core tr td:visited {
+    border-radius: 5px;
+    background-color: rgb(20, 247, 224);
+    padding: 2%;
+    text-align: justify;
+}
+
+#core tr td:hover {
+    background-color: turquoise;
+}
+
+#ourBusiness{
+    margin: auto;
+    padding: 20px 20px 30px;
+    display: block;
+    color: rgb(83, 83, 83);
+}
+
+#ourBusiness table {
+    margin: auto;
+}
+
+#ourBusiness tr td, #ourbusiness tr td:visited {
+    border-radius: 5px;
+    background-color: rgb(20, 247, 224);
+    padding: 2%;
+}
+
+#ourBusiness tr td p{
+    text-align:justify;
+}
+
+#ourBusiness tr td:hover, #core tr td:active {
+    background-color: turquoise;
+}
+
+#clientServiceTable {
+    width: 95%;
+    margin: auto;
+}
+
+#clientServiceStatement {
+    padding: 2%;
+    font-size: 1.2em;
+    text-align: right;
+    border-radius: 5px;
+    color: rgb(83, 83, 83);
+    background-color: rgb(20, 247, 224);
+}
+
+#clientServiceStatement strong {
+    font-family: 'Lora';
+}
+#header>div>p{
+    text-align:justify;
+}

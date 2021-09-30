@@ -1,0 +1,286 @@
+td:nth-child(7) {
+    text-decoration: none;
+    color: black;
+}
+
+#editForm { width: 100%; }
+
+#userDetails {
+    width: 100%;
+    margin: auto;
+}
+
+#userDetails input, #userDetails select {
+    padding: 12px 20px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    background-color: #edf6f9;
+    font-size: larger;
+}
+
+#userDetails input:hover, #userDetails select:hover { background-color: #f4f1de; }
+
+#userDetails input:focus, #userDetails select:focus { background-color: #f5cac3; }
+
+table#addressTable, table#addressTable th, table#addressTable td {
+    text-align: center;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    th,td{
+        font-size: 0.8em;
+        word-break:break-all;
+    }
+}
+
+#addressTable tr { height: 30px; }
+#addressTable th { background-color: #ffe74c; }
+#addressTable tr:nth-child(odd) { background-color: #9ad1d4; }
+#addressTable tr:nth-child(even) { background-color: #a9f0d1; }
+
+th#receiverAddress { width: 35%; }
+th#zipCode { width: 10%; }
+th#city { width: 20%; }
+th#state { width: 15%; }
+th#defaultAddress { width: 10%; }
+th#delete { width: 5%; }
+th#editAddress { width: 5%; }
+
+h2, h3 {
+text-align: center;
+font-size: larger;
+}
+
+.deleteAddress {
+    font-size: 16px;
+    background-color: #f72c25;
+    color: white;
+    padding: 5px 10px;
+    position: static;
+    border-radius: 5px;
+}
+
+.deleteAddress {
+    background-color:rgba(233, 17, 17, 0.842);
+    cursor:pointer;
+}
+
+.editButton {
+    border: none;
+    border-radius: 5px;
+    padding: 5%;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #e9c46a;
+    text-align: center;
+    color: black;
+}
+#saveButton{
+    text-align:center;
+}
+#saveButton>input {
+    border: none;
+    border-radius: 10px;
+    padding: 2% 7%;
+    margin: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #91e5f6;
+    text-align: center;
+}
+
+#saveButton>input:hover {
+    background-color: #00d3fd;
+    cursor: pointer;
+}
+
+#mainContent {
+  padding: 0% 10%;
+  background-color: white;
+  overflow: auto;
+}
+
+.mainHeader {
+  font-size: 2.0em;
+  font-weight: bold;
+  line-height: 70px;
+  font-family: 'Lora';
+  margin-bottom:15px;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}
+/*Remove client confirmation box*/
+#confirmationBox{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:3;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    padding-top:100px;
+    background-color: rgb(0,0,0,0.4);
+    display:none;
+}
+#confirmationBox .contents{
+    position:relative;
+    width:40%;
+    margin: 0px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #888;
+    background-color: rgb(46, 161, 37);
+    padding: 0px;
+}
+
+#confirmationBox .contents .header{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+
+#confirmationBox .contents .body{
+    background-color: white;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#confirmationBox .contents .body #button{
+    text-align:center;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#confirmationBox .contents .body #button .yes{
+    display:inline-block;
+    width: 145px;
+    margin-bottom: 10px;
+    background-color: darkgreen;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#confirmationBox .contents .body #button .yes:hover{
+    background-color: #5cb85c;
+    cursor:pointer;
+}
+#confirmationBox .contents .body #button .no{
+    display:inline-block;
+    width: 145px;
+    background-color: rgb(253, 19, 19);
+    margin-left:2%;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#confirmationBox .contents .body #button .no:hover{
+    background-color: rgba(192, 15, 15, 0.767);
+    cursor:pointer;
+}
+#confirmationBox .contents .footer{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width: 700px) {
+    #confirmationBox{
+        padding-top:50px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #confirmationBox{
+        padding-top:20px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:20px;
+    }
+    #confirmationBox .contents .body #button .yes{
+        width:100px;
+    }
+    #confirmationBox .contents .body #button .no{
+        width:100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #confirmationBox{
+        padding-top:5px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:16px;
+    }
+    #confirmationBox .contents .body #button .yes{
+        width:60px;
+    }
+    #confirmationBox .contents .body #button .no{
+        width:60px;
+    }
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notification2:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notification2{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}

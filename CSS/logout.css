@@ -1,0 +1,53 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    width:100%; 
+    background:#3d5a80;
+    margin: 0 auto 0 auto;  
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+}
+        
+p{
+  font-size:0.7em;
+  text-decoration: none;
+  color:black;
+}
+
+h1{
+  font-size:1.5em;
+  color:#46494c;
+}
+
+.coverBox{
+  background:white;
+  width:400px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #2980b9 4px solid; 
+}
+
+#centreBox{
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     width:auto;
+     height: 300px;
+     text-align: center;
+}
+.login{
+    font-size: 14px;
+}
+#time{
+    font-weight:bold;
+}
+@media screen and (max-width: 500px) {  
+    .coverBox{
+        width:300px;
+    }
+}
+       
+
+

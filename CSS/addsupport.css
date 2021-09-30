@@ -1,0 +1,196 @@
+section{
+    padding:30px;
+}
+h1{
+    text-align:left;
+    font-size:1.75em;
+    margin: 0px;
+    padding-top: 20px;
+    display:inline-block;
+    padding-right: 15px;
+    padding-left:10px;
+    font-family: 'Lora',Helvetica,Courier;
+}
+/*Form*/
+input{
+    font-family: 'PT Sans', sans-serif;
+}
+label{
+     font-family: 'Roboto', sans-serif;
+}
+.required{
+    color:red;
+}
+#createForm{
+    width:60%;
+    background-color:lightgray;
+    margin:30px auto;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 0px;
+     min-height:78vh;
+    border: 1px lightgray solid;
+}
+
+#createForm>label{
+    padding: 5px;
+    display:inline-block;
+    width: 150px;
+    text-align:left;
+    font-size: 16px;
+    margin: 4px 0px;
+}
+#createForm>input,#createForm>select,#createForm>textarea{
+    font-size:15px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#clientId,#name,#email{
+    width:250px;
+    cursor: no-drop;
+    
+}
+#prioritys{
+    width:220px;
+}
+#message{
+    width:95%;
+    height:260px;
+    margin: 10px 0px;
+    resize:none;
+}
+#subject{
+    width:380px;
+}
+#attachment{
+    background-color:white;
+}
+@media screen and (max-width: 800px) {
+    #clientId,#name,#email{
+        width:225px;
+        cursor: no-drop;
+
+    }
+    #subject{
+        width:300px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #createForm{
+        width:80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    #createForm{
+        width:80%;
+    }
+    #prioritys{
+        width:170px;
+    }
+    #clientId,#name,#email{
+        width:180px;
+        cursor: no-drop;
+
+    }
+    #subject{
+        width:220px;
+    }
+    #attachment{
+        font-size:12px;
+        width:200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    section{
+        padding:30px 15px;
+    }
+    #createForm{
+        width:90%;
+    }
+    #clientId,#name,#email{
+        width:180px;
+        cursor: no-drop;
+
+    }
+    #subject{
+        width:235px;
+    }
+}
+@media screen and (max-width: 300px) {
+    section{
+        padding:30px 15px;
+    }
+    #createForm{
+        width:90%;
+    }
+    #clientId,#name,#email{
+        width:180px;
+        cursor: no-drop;
+
+    }
+    #subject{
+        width:200px;
+    }
+    #createForm>input,#createForm>select,#createForm>textarea{
+        font-size:12px;
+    }
+}
+/*Form Button*/
+.formCenter{
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:65px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.cancel{
+    background-color:#dc3545;
+    color:white;
+}
+.cancel:hover{
+    background-color:#c82333;
+    color:white;
+}
+.reset{
+    background-color:#ffc107;
+    color:black;
+}
+.reset:hover{
+    background-color:#e0a800;
+    color:black;
+}
+/*Error message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}

@@ -1,0 +1,134 @@
+table {
+    margin: auto;
+}
+
+p#name {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#subDetails {
+    line-height:15px; 
+    font-size:15px;
+}
+
+p:hover {
+    color: #577590;
+    cursor: default;
+}
+
+#profileDetails {
+    width: 100%;
+}
+#profileDetails tr, #profileDetails th{
+    word-break:break-all;
+}
+#profileDetails tr td {
+    padding: 2% 5%;
+    background-color: #9b9b9b3f;
+    border-radius: 15px;
+}
+
+#male { color: #0051ff; }
+#female { color: #e56b6f; }
+
+#myOrdersH1 {
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+#myOrders { font-size: 1.5em; }
+.myOrdersTH {
+    text-align: left;
+    padding-bottom: 10px;
+    color: #5e6472;
+}
+@media screen and (max-width: 490px) {
+    #myOrders th,#myOrders td{
+        word-break:break-all;
+    }
+}
+
+#myOrders tr {  margin: 5%; }
+#myOrders td {
+    font-size: 20px;
+    border-right: 1px #979dac solid;
+    border-bottom: 1px #979dac solid;
+    
+}
+
+#myOrders img {
+    width: 50px;
+    height: 50px;
+}
+
+#orderID { width: 10%; }
+#orderDate { width: 10%; }
+#orderItem { width: 55%; }
+#totPrice { width: 15%; }
+#orderStatus { width: 10%; }
+
+#orderLink{
+     text-align: right;
+     margin-bottom: 10px;
+}
+#orderLink > a{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+   
+    text-decoration: none;
+    background-color: #ffd15e;
+    color: black;
+    font-weight: bold;
+}
+
+#orderLink > a:hover  { 
+    background-color: #d8b969; 
+}
+#mainContent {
+  padding: 0% 10%;
+  background-color: white;
+  overflow: auto;
+}
+
+.mainHeader {
+  font-size: 2.0em;
+  font-weight: bold;
+  line-height: 70px;
+  font-family: 'Lora';
+  margin-bottom:15px;
+}
+.orders{
+    background-color: #9b9b9b3f;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+    z-index: 2;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notifications:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notifications{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}

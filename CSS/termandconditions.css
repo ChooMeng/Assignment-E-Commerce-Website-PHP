@@ -1,0 +1,18 @@
+section#paragraph{
+    margin:0px auto;
+    overflow: auto;
+    background-attachment: fixed;
+    background-color: #dce0de;
+    line-height: normal;
+    word-spacing: normal;
+}
+
+#content {
+    padding: 0% 10%;
+    background-color: white;
+    overflow: auto;
+}
+
+ol {
+    list-style-position: outside;
+}

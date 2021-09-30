@@ -1,0 +1,707 @@
+h1{
+    text-align:left;
+    font-size:1.75em;
+    margin: 0px;
+    padding-top: 20px;
+    display:inline-block;
+    padding-right: 15px;
+    padding-left:10px;
+    font-family: 'Lora',Helvetica,Courier;
+}
+h2{
+    text-align:center;
+    padding: 18px 0px 10px;
+    margin:10px 0px;
+    font-family: 'Roboto',sans-serif;
+}
+/*Ticket status button*/
+.ticketStatusButton{
+    text-align:right;
+    padding-right: 20px;
+}
+/*Ticket canceled button*/
+.ticketCanceled{
+    margin: 15px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    display:inline-block;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    color:white;
+    text-align:right;
+    cursor:pointer;
+}
+.ticketCanceled:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.ticketCanceled:focus{
+    outline:none;
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+.ticketCanceled:active{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+/*Ticket resolved button*/
+.ticketResolved{
+    margin: 15px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    display:inline-block;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color:white;
+    text-align:right;
+    cursor:pointer;
+}
+.ticketResolved:hover{
+    background-color: #449d44;
+    border-color: #398439;
+}
+.ticketResolved:focus{
+    outline:none;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.ticketResolved:active{
+    background-color: #398439;
+    border-color: #398439;
+}
+/*support tickets details*/
+#content{
+    background-color:white;
+    min-height:76vh;
+}
+#supportId{
+    padding-top: 10px;
+    font-size: 1.6em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:black; 
+    text-align:center;
+}
+.ticketInfo{
+    width:75%;
+    border-radius: 15px;
+    border: 5px dotted white;
+    background-color:lightgray;
+    margin:auto;
+    padding: 10px;
+}
+.ticketInfo h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.leftSide,.rightSide{
+    
+    width:50%;
+    
+}
+.rightSide{
+    float:right;
+}
+.rightSide tr td,.leftSide tr td{
+    text-align:left;
+    word-break: break-all;
+}
+table{
+    width:100%;
+    font-size:24px;
+    border-collapse: collapse;
+    margin: 0px auto;
+    word-wrap: break-word;
+}
+tr{
+    width:100%;
+}
+td,th{
+    padding: 4px;
+}
+th{
+    color:white;
+}
+td{
+    font-size:18px;
+    text-align:center;
+    color:black;
+}
+@media screen and (max-width: 1000px) {
+    table{
+        font-size:18px;
+        
+    }
+    td{
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 700px) {
+    table{
+        font-size:12px;
+    }
+    th{
+        font-size:12px;
+    }
+    td{
+        font-size:10px;
+    }
+    .customerInfo,.ticketInfo{
+        width:85%;
+    }
+}
+@media screen and (max-width: 350px) {
+    
+    table{
+        font-size:10px;
+    }
+    td{
+        font-size:6px;
+    }
+}
+/*Button for modify, and back*/
+.buttonMenu{
+    text-align:center;
+}
+.buttonMenu button{
+    cursor:pointer;
+    margin: 2px 10px;
+    padding: 8px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    outline:none;
+    width:90px;
+}
+button:active{
+    outline:none;
+}
+#back{
+    color:white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+#back:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+#back:focus{
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+#back:active{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+/*Ticket response*/
+.custMsg,.staffMsg{
+    overflow:auto;
+    border-radius: 10px;
+    
+    height:auto;
+    width:85%;
+    margin: 10px;
+}
+.staffMsg{
+    background-color: lightgray;
+}
+.custMsg{
+    float:right;
+    background-color: #e2ffa8;
+}
+.staffMsg>.msgContents{
+    width:85%;
+    background-color:lightgray;
+    position: relative;
+}
+.staffMsg>.msgContents>.profile{
+    width:22.5%;
+    padding: 10px;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+    text-align:center;
+    height:100%;
+    float:left;
+    word-break: break-all;
+    margin-right: 10px;
+}
+.staffMsg>.msgContents>p{
+    width:112%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin:0px;
+    word-break: break-all;
+}
+.staffMsg>.msgContents>.timeframe{
+    font-size:10px;
+}
+.custMsg>.msgContents>.profile{
+    width:22.5%;
+    padding: 10px;
+    border-left: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    text-align:center;
+    height:100%;
+    float:right;
+    word-break: break-all;
+    margin-right: 5px;
+}
+.custMsg>.msgContents>p{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin:0px;
+    word-break: break-all;
+}
+.custMsg>.msgContents>.timeframe{
+    font-size:10px;
+}
+/*Reply ticket form*/
+#reply{
+    margin:auto;
+    background-color:royalblue;
+    border-radius: 5px;
+    padding: 10px;
+    color:white;
+    width:70%;
+}
+#replyForm textarea{
+    width:100%;
+    height: 150px;
+}
+#reply input:not(#formButton),#reply textarea,#reply select{
+    font-size:15px;
+    border-radius: 5px;
+    padding: 3px;
+}
+label{
+    color:white;
+
+}
+#messages{
+    overflow:hidden;
+}
+@media screen and (max-width: 550px) {
+    #reply{
+        width:90%;
+        margin: auto;
+    }
+    #replyForm textarea{
+        width:70%;
+    }
+    #reply input,#reply textarea,#reply select{
+        font-size:10px;
+        border-radius: 3px;
+        padding: 3px;
+        border: 1px solid #ccc;
+    }
+}
+#attachment{
+    color:white;
+}
+/*Form Button*/
+.formCenter{
+    margin-top:10px;
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:65px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.reset{
+    background-color:#ffc107;
+    color:black;
+}
+.reset:hover{
+    background-color:#e0a800;
+    color:black;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+    z-index: 2;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notifications:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notifications{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+.required{
+    color:red;
+}
+
+/*Confirmation of change ticket status to resolved*/
+#resolvedConfirmationBox{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:3;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    padding-top:100px;
+    background-color: rgb(0,0,0,0.4);
+    display:none;
+}
+#resolvedConfirmationBox .contents{
+    position:relative;
+    width:40%;
+    margin: 0px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #888;
+    background-color: rgb(46, 161, 37);
+    padding: 0px;
+}
+
+#resolvedConfirmationBox .contents .header{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+
+#resolvedConfirmationBox .contents .body{
+    background-color: white;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#resolvedConfirmationBox .contents .body #button{
+    text-align:center;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#resolvedConfirmationBox .contents .body #button .yes{
+    display:inline-block;
+    width: 145px;
+    margin-bottom: 10px;
+    background-color: darkgreen;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#resolvedConfirmationBox .contents .body #button .yes:hover{
+    background-color: #5cb85c;
+    cursor:pointer;
+}
+#resolvedConfirmationBox .contents .body #button .no{
+    display:inline-block;
+    width: 145px;
+    background-color: rgb(253, 19, 19);
+    margin-left:2%;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#resolvedConfirmationBox .contents .body #button .no:hover{
+    background-color: rgba(192, 15, 15, 0.767);
+    cursor:pointer;
+}
+#resolvedConfirmationBox .contents .footer{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width: 700px) {
+    #resolvedConfirmationBox{
+        padding-top:50px;
+    }
+    #resolvedConfirmationBox .contents .header{
+        width:80%;
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #resolvedConfirmationBox{
+        padding-top:20px;
+    }
+    #resolvedConfirmationBox .contents .header{
+        width:80%;
+        font-size:20px;
+    }
+    #resolvedConfirmationBox .contents .body #button .yes{
+        width:100px;
+    }
+    #resolvedConfirmationBox .contents .body #button .no{
+        width:100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #resolvedConfirmationBox{
+        padding-top:5px;
+    }
+    #resolvedConfirmationBox .contents .header{
+        width:80%;
+        font-size:16px;
+    }
+    #resolvedConfirmationBox .contents .body #button .yes{
+        width:45px;
+        font-size:12px;
+    }
+    #resolvedConfirmationBox .contents .body #button .no{
+        width:45px;
+        font-size:12px;
+    }
+}
+/*Confirmation of change ticket status to canceled*/
+#canceledConfirmationBox{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:3;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    padding-top:100px;
+    background-color: rgb(0,0,0,0.4);
+    display:none;
+}
+#canceledConfirmationBox .contents{
+    position:relative;
+    width:40%;
+    margin: 0px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #888;
+    background-color: rgb(46, 161, 37);
+    padding: 0px;
+}
+
+#canceledConfirmationBox .contents .header{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+
+#canceledConfirmationBox .contents .body{
+    background-color: white;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#canceledConfirmationBox .contents .body #button{
+    text-align:center;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#canceledConfirmationBox .contents .body #button .yes{
+    display:inline-block;
+    width: 145px;
+    margin-bottom: 10px;
+    background-color: darkgreen;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#canceledConfirmationBox .contents .body #button .yes:hover{
+    background-color: #5cb85c;
+    cursor:pointer;
+}
+#canceledConfirmationBox .contents .body #button .no{
+    display:inline-block;
+    width: 145px;
+    background-color: rgb(253, 19, 19);
+    margin-left:2%;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#canceledConfirmationBox .contents .body #button .no:hover{
+    background-color: rgba(192, 15, 15, 0.767);
+    cursor:pointer;
+}
+#canceledConfirmationBox .contents .footer{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width: 700px) {
+    #canceledConfirmationBox{
+        padding-top:50px;
+    }
+    #canceledConfirmationBox .contents .header{
+        width:80%;
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #canceledConfirmationBox{
+        padding-top:20px;
+    }
+    #canceledConfirmationBox .contents .header{
+        width:80%;
+        font-size:20px;
+    }
+    #canceledConfirmationBox .contents .body #button .yes{
+        width:100px;
+    }
+    #canceledConfirmationBox .contents .body #button .no{
+        width:100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #canceledConfirmationBox{
+        padding-top:5px;
+    }
+    #canceledConfirmationBox .contents .header{
+        width:80%;
+        font-size:16px;
+    }
+    #canceledConfirmationBox .contents .body #button .yes{
+        width:45px;
+        font-size:12px;
+    }
+    #canceledConfirmationBox .contents .body #button .no{
+        width:45px;
+        font-size:12px;
+    }
+}
+/* Zooming the image */
+#imgModal{
+    background-color:black;
+    position:fixed;
+    height:100%;
+    width:100%;
+    display:none;
+    z-index:3;
+    left: 0;
+    top: 0;
+    text-align:center;
+    padding:100px 0px;
+}
+#zoomImg{
+    border: 2px solid white;
+    height:500px;
+    min-width:70%;
+    max-width:90%;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration:0.6s;
+    -moz-animation-name: zoom;
+    -moz-animation-duration:0.6s;
+    -o-animation-name: zoom;
+    -o-animation-duration:0.6s;
+}
+
+#close{
+    top: 0;
+    right:0;
+    padding: 2px 10px;
+    margin: 15px;
+    border: 1px solid rgba(255, 0, 0, 0.753);
+    font-weight:bold;
+    background-color:rgb(255, 37, 37);
+    font-size:32px;
+    color:white;
+    position:absolute;
+    overflow:hidden;
+}
+#close:hover{
+    cursor:pointer;
+    border: 1px solid rgba(158, 12, 12, 0.753);
+    background-color:rgb(189, 29, 29);
+}
+/* Zoom Animation */
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+@-o-keyframes zoom{
+    from{-o-transform: scale(0);}
+    to{-o-transform: scale(1);}
+}
+@-moz-keyframes zoom{
+    from{-moz-transform: scale(0);}
+    to{-moz-transform: scale(1);}
+}
+
+/*Messages attachment*/
+#messages img:hover{
+    filter: grayscale(60%);
+}

@@ -1,0 +1,116 @@
+section#register {
+    padding: 0 5%;
+    margin-bottom: auto;
+    overflow: auto;
+}
+
+#newUserInfo {
+    margin: 1% 2%;
+    background-color: #eeeeee;
+    box-shadow: 2px 2px #4ecdc4;
+    padding: 2%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#userDetails, #newUserAddress,#newUserPw {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#userDetails input[type=text],#userDetails input[type=password],#userDetails input[type=date],#userDetails input[type=email], #userDetails select {
+    padding: 12px 20px;
+    margin: auto;
+    box-sizing: border-box;
+    border: black 1px solid;
+    text-align: center;
+    width: 100%;
+    background-color: #edf6f9;
+    font-size: larger;
+}
+#userDetails td{
+    word-break: break-all;
+}
+
+select,textarea{ /*Make the select box and text area width same with input width*/
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: black 1px solid;
+    box-sizing: border-box;
+    line-height: normal;
+    background-color: #edf6f9;
+    resize: none;
+}
+.enterInput:hover, #userDetails input:hover, #userDetails select:hover { background-color: #f4f1de; }
+.enterInput:focus, #userDetails input:focus, #userDetails select:focus { background-color: #c3eef5; }
+
+#registerBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 1% 3.5%;
+    margin: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    text-align: center;
+    color:white;
+}
+
+#registerBtn:hover {
+    background-color: #449d44;
+    border-color: #398439;
+    cursor: pointer;
+    color:white;
+}
+
+#resetBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 1% 3.5%;
+    margin: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    text-align: center;
+    color:white;
+}
+
+#resetBtn:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+    cursor: pointer;
+    color:white;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+    text-align:left;
+}
+#gotAcc > a{
+    text-decoration: none;
+}
+#gotAcc > a:visited{
+    color:blue;
+}
+#gotAcc > a:hover{
+    color: midnightblue;
+}

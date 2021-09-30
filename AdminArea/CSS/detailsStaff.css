@@ -1,0 +1,110 @@
+section{
+    min-height:87vh;
+}
+/*Staff details box*/
+#details{
+    width:70%;
+    background-color:royalblue;
+    border-radius: 5px;
+    margin:20px auto;
+    overflow:hidden;
+}
+#staffId{
+    padding-top: 10px;
+    font-size: 1.4em;
+    margin-top: 0px;
+    font-weight: bold;
+    color:white; 
+    text-align:center;
+}
+#lastUpdate{
+    font-size: 12px;
+    color:white;
+    padding: 8px;
+    margin:0px;
+    text-align:right;
+}
+.leftSide,.rightSide{
+    border-top: 5px dotted lightgray;
+    width:50%;
+}
+.rightSide{
+    float:right;
+}
+/*Represent label , title of information*/
+.field{
+    margin:5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:white;
+    display:block;
+    text-decoration:underline;
+    text-align:center;
+    word-wrap: break-word; 
+}
+/*information*/
+.data{
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size:1.1em;
+    color:black;
+    display:block;
+    text-align:center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color:white;
+    word-wrap: break-word; 
+}
+/*Button for modify and back*/
+.buttonMenu{
+    text-align:center;
+}
+.buttonMenu button{
+    cursor:pointer;
+    margin: 2px 10px;
+    padding: 8px;
+    font-size: 1.25em;
+    border-radius: 5px;
+    outline:none;
+    width:80px;
+}
+button:active{
+    outline:none;
+}
+#modify{
+    color: white;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+#modify:hover{
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+#modify:active{
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+#modify:focus{
+    background-color: #ec971f;
+    border-color: #985f0d;
+}
+#back{
+    color:white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+#back:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+#back:focus{
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+#back:active{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}

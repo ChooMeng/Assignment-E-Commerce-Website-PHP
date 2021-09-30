@@ -1,0 +1,508 @@
+/*NavigationBar for switch profile, changepassword and address section*/
+.modifyMenu{
+    background-color: #5270abf3;
+    padding:10px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size:0px;
+}
+.active{
+    background-color: lightskyblue;
+}
+#profile:not(.active),#changePassword:not(.active),#addressA:not(.active){
+    background-color: lightblue;
+}
+.profile,.changePassword,.addressA,.modifyAddress,.newAddress{ /*Section background*/
+    background-color:lightgray;
+    min-height:78vh;
+}
+.modifyMenu>#profile{
+    padding: 10px;
+    color:black;
+    border-top-left-radius: 10px;
+    cursor:pointer;
+    font-size:18px;
+}
+.modifyMenu>#profile:hover{
+    background-color:lightsteelblue;
+    
+}
+.modifyMenu>#changePassword{
+    padding: 10px;
+    color:black;
+    cursor:pointer;
+    font-size:18px;
+}
+.modifyMenu>#changePassword:hover{
+    background-color:lightsteelblue;
+}
+.modifyMenu>#addressA{
+    padding: 10px;
+    color:black;
+    cursor:pointer;
+    font-size:18px;
+}
+.modifyMenu>#addressA:hover{
+    background-color:lightsteelblue;
+}
+
+/*Form*/
+form{
+    margin:auto;
+    
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.leftSide{
+    width:50%;
+    display:block;
+    padding: 5px 0px 5px 5px;
+}
+.rightSide{
+    display:block;
+    float:right;
+    width:50%;
+    padding: 5px 5px 5px 0px;
+}
+#gen{ /*Gender*/
+    display:inline-block;
+    
+}
+.required{
+    color:red;
+}
+label{
+    padding: 5px;
+    display:inline-block;
+    width: 150px;
+    text-align:left;
+    font-size: 17px;
+    margin: 4px 0px;
+}
+input,select,textarea{
+    font-size:15px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+select,textarea{ /*Make the select box and text area width same with input width*/
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+input[type="password"],input[type="text"],input[type="date"],select,textarea{
+    padding: 5px;
+    width:210px;
+}
+#address{
+    resize:none;
+    margin: 0px;
+}
+label[for="M"],label[for="F"]{
+    padding: 5px;
+    display:inline-block;
+    width:60px;
+    text-align:left;
+}
+@media screen and (min-width: 1050px) {
+    label{
+        width: 190px;
+        font-size: 20px;
+    }
+    input,select,textarea{
+        font-size:18px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+}
+@media screen and (max-width: 1000px){
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:200px;
+    }
+}
+@media screen and (max-width: 936px) {
+    #gen{
+        display:block;
+        
+    }
+    #gen+br{
+        display:none;
+    }
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:215px;
+    }
+}
+@media screen and (max-width: 500px) {
+    label{
+        width: 130px;
+        font-size: 15px;
+    }
+    input,select,textarea{
+        font-size:13px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    label{
+        width: 110px;
+        font-size: 11px;
+    }
+    input,select,textarea{
+        font-size:9px;
+    }
+}
+/*Form Button*/
+.formCenter{
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:70px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.cancel{
+    background-color:#dc3545;
+    color:white;
+}
+.cancel:hover{
+    background-color:#c82333;
+    color:white;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+.changePassword{ /*Change password section*/
+    display:none;
+}
+/*Display existing address table*/
+table,th,td{
+    border: 1px solid black;
+}
+table{
+    width:100%;
+    font-size:24px;
+    border-collapse: collapse;
+    margin: 5px auto;
+    word-wrap: break-word;
+}
+tr{
+    width:100%;
+}
+td,th{
+    border: 1px solid white;
+    padding: 4px;
+}
+th:not(.tableHeader){
+    background-color: #34629d;
+    color:white;
+}
+td{
+    font-size:18px;
+    text-align:center;
+    background-color: #9fbee9;
+    color:black;
+}
+@media screen and (max-width: 1000px) {
+    table{
+        font-size:18px;
+        
+    }
+    td{
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 700px) {
+    table{
+        font-size:12px;
+    }
+    th{
+        font-size:12px;
+    }
+    td{
+        font-size:8px;
+    }
+}
+@media screen and (max-width: 350px) {
+    table{
+        font-size:10px;
+    }
+    td{
+        font-size:6px;
+    }
+}
+td button{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    color:white;
+    border-color: #46b8da;
+    background-color:#5bc0de;
+    outline:none;
+    cursor:pointer;
+    width:70px;
+}
+td button:hover{
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+td button:active{
+    outline:none;
+}
+/*Remove client confirmation box*/
+#confirmationBox{
+    top:0;
+    left:0;
+    position:fixed;
+    z-index:3;
+    overflow:auto;
+    height:100%;
+    width:100%;
+    padding-top:100px;
+    background-color: rgb(0,0,0,0.4);
+    display:none;
+}
+#confirmationBox .contents{
+    position:relative;
+    width:40%;
+    margin: 0px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #888;
+    background-color: rgb(46, 161, 37);
+    padding: 0px;
+}
+
+#confirmationBox .contents .header{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+
+#confirmationBox .contents .body{
+    background-color: white;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#confirmationBox .contents .body #button{
+    text-align:center;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#confirmationBox .contents .body #button .yes{
+    display:inline-block;
+    width: 145px;
+    margin-bottom: 10px;
+    background-color: darkgreen;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#confirmationBox .contents .body #button .yes:hover{
+    background-color: #5cb85c;
+    cursor:pointer;
+}
+#confirmationBox .contents .body #button .no{
+    display:inline-block;
+    width: 145px;
+    background-color: rgb(253, 19, 19);
+    margin-left:2%;
+    padding:10px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:16px;
+    color:white;
+    font-weight:bold;
+}
+#confirmationBox .contents .body #button .no:hover{
+    background-color: rgba(192, 15, 15, 0.767);
+    cursor:pointer;
+}
+#confirmationBox .contents .footer{
+    font-size:28px;
+    font-weight: bold;
+    padding: 16px;
+    text-align:center;
+    color:white;
+}
+@media screen and (max-width: 700px) {
+    #confirmationBox{
+        padding-top:50px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:24px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #confirmationBox{
+        padding-top:20px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:20px;
+    }
+    #confirmationBox .contents .body #button .yes{
+        width:100px;
+    }
+    #confirmationBox .contents .body #button .no{
+        width:100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #confirmationBox{
+        padding-top:5px;
+    }
+    #confirmationBox .contents .header{
+        width:80%;
+        font-size:16px;
+    }
+    #confirmationBox .contents .body #button .yes{
+        width:60px;
+    }
+    #confirmationBox .contents .body #button .no{
+        width:60px;
+    }
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notification:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notification{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+/*Action button*/
+#modify{
+    color: white;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+#modify:hover{
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+#modify:active{
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+#modify:focus{
+    background-color: #ec971f;
+    border-color: #985f0d;
+}
+#remove{
+    color:white;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+#remove:hover{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+#remove:focus{
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+#remove:active{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+/*Button of create address*/
+.createMenu button{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color:white;
+    cursor:pointer;
+}
+.createMenu button:hover{
+    background-color: #449d44;
+    border-color: #398439;
+}
+.createMenu button:focus{
+    outline:none;
+    background-color: #449d44;
+    border-color: #398439;
+}
+.createMenu button:active{
+    background-color: #398439;
+   border-color: #398439;
+}
+.createMenu{
+    margin: 0px 5%;
+}
+.createMenu button{
+    margin: 15px 0px;
+    padding: 8px;
+    float:right;
+    border-radius: 5px;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}

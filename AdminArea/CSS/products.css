@@ -1,0 +1,207 @@
+#table{
+    min-height: 83vh;
+}
+#description{
+    background-color: lightgray;
+}
+img{
+    height: auto;
+}
+
+h1{
+    margin: 0px;
+    padding: 10px 5px;
+}
+#products{
+  border-collapse: collapse;
+   width: 100%;
+  
+}
+
+#products td{
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+
+.title {
+  overflow: hidden;
+  margin-top: 4px;
+  background-color: #e9ecef;
+}
+
+.title a {
+  float: left;
+  color: #6c757d;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.title a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.title a.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+.bar{
+    text-align:right;
+    
+}
+.searchBar{
+    
+    text-align:left;
+    border: 1px solid #ddd;
+    padding: 2px 12px;
+    margin-top: 5px;
+    margin-right: -4px;
+    height: 30px;
+    width:200px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#searchIcon{
+    font-size:16px;
+    background-color: rgb(207, 204, 204);
+    border: 3px solid rgb(207, 204, 204);
+    border-right:none;
+    padding: 6px 10px 8px;
+}
+
+input[type=submit]{
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #2d3142;
+    border-radius: 5px;
+}
+
+input:hover[type=submit]{
+  color: #4f5d75;
+}
+
+#create{
+    background-color: #e8eddf;
+      transition: transform .2s;
+}
+
+#create:hover{
+    background-color: #cfdbd5;
+    transform: scale(1.2); 
+}
+
+#edit{
+    background-color: #83e377; 
+    border-color: #b9e769;
+    transition: transform .2s;
+    font-size:1.05em;
+    width:90px;
+}
+
+#delete{
+    background-color:#ff6b6b;
+    border-color: #ffb5a7;
+    transition: transform .2s;
+    font-size:1.05em;
+    width:90px;
+    padding: 4px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#view{
+    outline:none;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+    transition: transform .2s;
+    font-size:1.05em;
+    width:90px;
+}
+
+#view:hover{
+    background-color: #31b0d5;
+    border-color: #269abc;
+    transform: scale(1.1); 
+    color:white;
+}
+#edit:hover{
+    background-color: #0ead69;
+    transform: scale(1.1); 
+    color:white;
+}
+
+#delete:hover{
+    background-color: #da1e37; 
+    transform: scale(1.1); 
+    color:white;
+}
+
+#text{
+    font-size: 1.2em;
+}
+
+textarea {
+    resize: none;
+}
+/*Page number*/
+#page{
+    text-align:center;
+}
+#pageNumber{
+    display:inline-block;
+    text-align:center;
+    margin: 15px 5px;
+    font-size: 0px;
+}
+#pageNumber a:not(.current){
+    background-color:white;
+    color:black;
+    text-decoration: none;
+    transition: background-color .3s;
+    padding: 10px 10px;
+    cursor:pointer;
+    font-size:16px;
+}
+.current{
+    background-color: #4CAF50;
+    color:white;
+    text-decoration: none;
+    transition: background-color .3s;
+    padding: 10px 15px;
+    cursor:pointer;
+    font-size:16px;
+}
+#pageNumber a:hover:not(.current){
+    background: #ddf;
+}
+/*Bar of display order amount of each type*/
+.productMenu{
+    margin: 0px 5%;
+    
+}
+.productMenu>p{
+    display:inline-block;
+    margin-left: 8px;
+    background-color: white;
+    padding-right: 10px;
+    color:black;
+    cursor:pointer;
+}
+.productMenu>p:hover{
+    color:white;
+    background-color:gray;
+}
+.amount{
+    display:inline-block;
+    background-color:black;
+    padding: 4px 10px;
+    color:white;
+    border: gray 2px solid;
+    margin-right: 5px;
+}

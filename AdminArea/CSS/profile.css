@@ -1,0 +1,189 @@
+/*NavigationBar for switch profile and changepassword section*/
+#profile:not(.active),#changePassword:not(.active){
+    background-color: lightblue;
+}
+.active{
+    background-color: lightskyblue;
+}
+.modifyMenu{
+    background-color: #5270abf3;
+    padding:10px 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size:0px;
+}
+.modifyMenu>#profile{
+    padding: 10px;
+    color:black;
+    border-top-left-radius: 10px;
+    cursor:pointer;
+    font-size:18px;
+}
+.modifyMenu>#profile:hover{
+    background-color:lightsteelblue;
+    
+}
+.modifyMenu>#changePassword{
+    padding: 10px;
+    color:black;
+    cursor:pointer;
+    font-size:18px;
+}
+.modifyMenu>#changePassword:hover{
+    background-color:lightsteelblue;
+}
+/*Profile or Changepassword section background*/
+.profile,.changePassword{
+    background-color:lightgray;
+    min-height:78vh;
+}
+/*Form*/
+form{
+    margin:auto;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+.leftSide{
+    width:50%;
+    display:block;
+}
+.rightSide{
+    display:block;
+    float:right;
+    width:50%;
+}
+#gen{ /*Gender*/
+    display:inline-block;  
+}
+.required{
+    color:red;
+}
+label{
+    padding: 5px;
+    display:inline-block;
+    width: 150px;
+    text-align:left;
+    font-size: 17px;
+    margin: 4px 0px;
+}
+input,select,textarea{
+    font-size:15px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+input[type="password"],input[type="text"],input[type="date"]{
+    padding: 5px;
+    width:215px;
+}
+label[for="M"],label[for="F"]{
+    padding: 5px;
+    display:inline-block;
+    width:60px;
+    text-align:left;
+}
+@media screen and (min-width: 1050px) {
+    label{
+        width: 190px;
+        font-size: 20px;
+    }
+    input,select,textarea{
+        font-size:18px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+}
+@media screen and (max-width: 946px) {
+    /*Fix resolution changing issue caused gender and date not breakline*/
+    #gen{
+        display:block;
+        
+    }
+    #gen+br{
+        display:none;
+    }
+    #birthdate{
+        display:block;
+    }
+    select{
+        display:block;
+    }
+}
+@media screen and (max-width: 500px) {
+    label{
+        width: 130px;
+        font-size: 15px;
+    }
+    input,select,textarea{
+        font-size:13px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+    input[type="password"],input[type="text"],input[type="date"]{
+        width:auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    label{
+        width: 110px;
+        font-size: 11px;
+    }
+    input,select,textarea{
+        font-size:9px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+}
+/*Form Button*/
+.formCenter{
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:70px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.cancel{
+    background-color:#dc3545;
+    color:white;
+}
+.cancel:hover{
+    background-color:#c82333;
+    color:white;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}

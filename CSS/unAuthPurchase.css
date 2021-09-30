@@ -1,0 +1,122 @@
+section {
+    overflow: auto;
+    margin: auto;
+    background-color: #dce0de;
+}
+
+#mainContent {
+    padding: 0% 10%;
+    overflow: auto;
+    margin: auto;
+    background-color: white;
+}
+
+.mainHeader {
+    font-size: 2.0em;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#shippingForm {
+    width: 100%;
+}
+
+#custDetails {
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+     text-align: center;
+ }
+ #shippingDetails{
+     margin:auto;
+ }
+
+ .enterInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: normal;
+    border: 1px solid black;
+    resize: none;
+}
+
+
+#custDetails input, #custDetails select, .enterInput {
+    padding: 12px 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #edf6f9;
+}
+
+#custDetails input:hover, #custDetails select:hover, .enterInput:hover {
+    background-color: #f4f1de;
+}
+
+#custDetails input:focus, #custDetails select:focus, .enterInput:focus{
+    background-color: #f5cac3;
+}
+.button{
+    text-align:center;
+}
+.fButton {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 32px;
+    margin: 0 5% 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*Submit button*/
+#sButton { 
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color:white;
+    cursor:pointer;
+}
+/*Submit button*/
+#sButton:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+#sButton:focus{
+    outline:none;
+}
+/*Reset button*/
+#rButton {
+    background-color:#ffc107;
+    color:black;
+}
+/*Reset button*/
+#rButton:hover {
+    background-color:#e0a800;
+    color:black;
+}
+#rButton:focus {
+    outline:none;
+}
+/*Error message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+
+.important { color: red; }

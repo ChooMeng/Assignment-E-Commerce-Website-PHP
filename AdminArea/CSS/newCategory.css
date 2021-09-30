@@ -1,0 +1,167 @@
+#table{
+    min-height: 88vh;
+}
+img{
+    height: auto;
+}
+h1{
+    margin: 0px;
+    padding: 10px 5px;
+}
+#category{
+  border-collapse: collapse;
+   width: 100%;
+  
+}
+
+#category td{
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align:left;
+  font-size: 20px;
+}
+#category th{
+    cursor:auto;
+    color:black;
+}
+
+.title {
+  overflow: hidden;
+  margin-top: 4px;
+  background-color: #e9ecef;
+}
+
+.title a {
+  float: left;
+  color: #6c757d;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.title a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.title a.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+.bar{
+    text-align:right;
+    
+}
+table{
+    width:auto;
+}
+input[type=button]{
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #2d3142;
+    border-radius: 5px;
+}
+
+input:hover[type=button]{
+  color: #4f5d75;
+}
+input,select,textarea{
+    font-size:15px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+select,textarea{ /*Make the select box and text area width same with input width*/
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+input[type="text"],input[type="number"],input[type="file"],select,textarea{
+    padding: 5px;
+    width:90%;
+}
+@media screen and (min-width: 1050px) {
+    input,select,textarea{
+        font-size:16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    input,select,textarea{
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 350px) {
+   input,select,textarea{
+        font-size:8px;
+    }
+}
+#create{
+    background-color: #e8eddf;
+      transition: transform .2s;
+}
+
+#create:hover{
+    background-color: #cfdbd5;
+    transform: scale(1.2); 
+}
+
+#edit{
+    background-color: #83e377; 
+    border-color: #b9e769;
+    transition: transform .2s;
+}
+
+#delete{
+    background-color:#ff6b6b;
+    border-color: #ffb5a7;
+    transition: transform .2s;
+}
+
+#edit:hover{
+    background-color: #0ead69;
+    transform: scale(1.1); 
+}
+
+#delete:hover{
+    background-color: #da1e37; 
+    transform: scale(1.1); 
+}
+
+#text{
+    font-size: 1.2em;
+}
+
+.error, .info
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.1em;
+    list-style-position: inside;
+    border-radius: 4px;
+}
+
+.error
+{
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+
+.info
+{
+    border: 2px solid #1a936f;
+    background-color: #cbdfbd;
+    color: #114b5f;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}

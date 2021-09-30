@@ -1,0 +1,206 @@
+.required{
+    color:red;
+}
+form{
+    width:100%;
+    margin:auto;
+    background-color:lightgray;
+    padding: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+    min-height:78vh;
+}
+/*Ticket responses*/
+.custMsg,.staffMsg{
+    overflow:auto;
+    border-radius: 10px;
+    overflow:hidden;
+    height:auto;
+    width:85%;
+    margin: 10px;
+}
+.custMsg{
+    background-color: white;
+}
+.staffMsg{
+    float:right;
+    background-color: #e2ffa8;
+}
+.custMsg>.msgContents{
+    background-color:white;
+    position: relative;
+}
+.custMsg>.msgContents>.profile{
+    width:22.5%;
+    padding: 10px;
+    border-right: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    text-align:center;
+    height:100%;
+    float:left;
+    word-break: break-all;
+    margin-right: 10px;
+}
+.custMsg>.msgContents>.timeframe{
+    font-size:10px;
+}
+.staffMsg>.msgContents>.profile{
+    width:22.5%;
+    padding: 10px;
+    border-left: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    text-align:center;
+    height:100%;
+    float:left;
+    word-break: break-all;
+    margin-right: 5px;
+}
+
+textarea{
+    margin-top: 10px;
+    width:70%;
+    height: 110px;
+    font-size:1.3em;
+}
+.staffMsg>.msgContents>textarea{
+    margin-left:5px;
+}
+.staffMsg>.msgContents>.timeframe{
+    font-size:10px;
+    margin-left: 5px;
+}
+@media screen and (max-width: 560px) {
+    textarea{
+        width:60%;
+    }
+}
+#messages{
+    overflow:hidden;
+}
+/*Form Button*/
+.formCenter{
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:65px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.cancel{
+    background-color:#dc3545;
+    color:white;
+}
+.cancel:hover{
+    background-color:#c82333;
+    color:white;
+}
+.reset{
+    background-color:#ffc107;
+    color:black;
+}
+.reset:hover{
+    background-color:#e0a800;
+    color:black;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/* Zooming the image */
+#imgModal{
+    background-color:black;
+    position:fixed;
+    height:100%;
+    width:100%;
+    display:none;
+    z-index:3;
+    left: 0;
+    top: 0;
+    text-align:center;
+    padding:100px 0px;
+}
+#zoomImg{
+    border: 2px solid white;
+    height:500px;
+    min-width:70%;
+    max-width:90%;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration:0.6s;
+    -moz-animation-name: zoom;
+    -moz-animation-duration:0.6s;
+    -o-animation-name: zoom;
+    -o-animation-duration:0.6s;
+}
+
+#close{
+    top: 0;
+    right:0;
+    padding: 2px 10px;
+    margin: 15px;
+    border: 1px solid rgba(255, 0, 0, 0.753);
+    font-weight:bold;
+    background-color:rgb(255, 37, 37);
+    font-size:32px;
+    color:white;
+    position:absolute;
+    overflow:hidden;
+}
+#close:hover{
+    cursor:pointer;
+    border: 1px solid rgba(158, 12, 12, 0.753);
+    background-color:rgb(189, 29, 29);
+}
+/* Zoom Animation */
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+@-webkit-keyframes zoom{
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+@-o-keyframes zoom{
+    from{-o-transform: scale(0);}
+    to{-o-transform: scale(1);}
+}
+@-moz-keyframes zoom{
+    from{-moz-transform: scale(0);}
+    to{-moz-transform: scale(1);}
+}
+
+/*Messages attachment*/
+#messages img:hover{
+    filter: grayscale(60%);
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}

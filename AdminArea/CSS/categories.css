@@ -1,0 +1,168 @@
+#table{
+    min-height: 83vh;
+}
+img{
+    height: auto;
+}
+h1{
+    margin: 0px;
+    padding: 10px 5px;
+}
+#categories{
+  border-collapse: collapse;
+   width: 100%;
+  
+}
+
+#categories td{
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.title {
+  overflow: hidden;
+  margin-top: 4px;
+  background-color: #e9ecef;
+}
+
+.title a {
+  float: left;
+  color: #6c757d;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.title a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.title a.active {
+  background-color: #6c757d;
+  color: white;
+}
+
+
+.bar{
+    text-align:right;
+    
+}
+.searchBar{
+    
+    text-align:left;
+    border: 1px solid #ddd;
+    padding: 2px 12px;
+    margin-top: 5px;
+    margin-right: -4px;
+    height: 30px;
+    width:200px;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+#searchIcon{
+    font-size:16px;
+    background-color: rgb(207, 204, 204);
+    border: 3px solid rgb(207, 204, 204);
+    border-right:none;
+    padding: 6px 10px 8px;
+}
+
+input[type=submit]{
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #2d3142;
+    border-radius: 5px;
+}
+
+input:hover[type=submit]{
+  color: #4f5d75;
+}
+button{
+    padding: 4px 18px;
+    text-decoration: none;
+    color: #2d3142;
+    border-radius: 5px;
+}
+
+button:hover{
+  color: #4f5d75;
+}
+#create{
+    background-color: #e8eddf;
+      transition: transform .2s;
+}
+
+#create:hover{
+    background-color: #cfdbd5;
+    transform: scale(1.2); 
+}
+
+#edit{
+    background-color: #83e377; 
+    border-color: #b9e769;
+    transition: transform .2s;
+    font-size:1.05em;
+    width:90px;
+}
+
+#delete{
+    background-color:#ff6b6b;
+    border-color: #ffb5a7;
+    transition: transform .2s;
+    font-size:1.05em;
+    width:90px;
+}
+
+#edit:hover{
+    background-color: #0ead69;
+    transform: scale(1.1); 
+    color:white;
+}
+
+#delete:hover{
+    background-color: #da1e37; 
+    transform: scale(1.1); 
+    color:white;
+}
+
+#text{
+    font-size: 1.2em;
+}
+
+textarea {
+    resize: none;
+}
+form:not(#removeForm){
+    display:inline-block;
+}
+/*Notification Box to display notification*/
+.notificationBox{
+    position:fixed;
+    bottom: 0;
+    right:0;
+}
+.green{
+    background-color:#4CAF50;
+}
+.yellow{
+    background-color: #ff9800;
+}
+.red{
+    background-color: #f44336;
+}
+#notification:not(.green):not(.yellow):not(.red){
+    background-color:gray;
+}
+#notification{
+    padding: 20px;
+    margin: 8px;
+    color:white;
+    width: 300px;
+    display:block;
+    opacity: 1;
+    transition: opacity 0.6s;
+}

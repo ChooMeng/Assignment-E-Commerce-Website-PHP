@@ -1,0 +1,175 @@
+/*Form*/
+form{
+    width:100%;
+    margin:auto;
+    background-color:lightgray;
+    padding: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0px;
+    min-height:82vh;
+}
+.leftSide{
+    width:50%;
+    display:block;
+    padding: 5px 0px 5px 5px;
+}
+.rightSide{
+    display:block;
+    float:right;
+    width:50%;
+    padding: 5px 5px 5px 0px;
+}
+
+#gen{ /*Gender*/
+    display:inline-block;
+    
+}
+.required{
+    color:red;
+}
+label{
+    padding: 5px;
+    display:inline-block;
+    width: 150px;
+    text-align:left;
+    font-size: 17px;
+    margin: 4px 0px;
+}
+input,select,textarea{
+    font-size:15px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+select,textarea{ /*Make the select box and text area width same with input width*/
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+input[type="password"],input[type="text"],input[type="date"],select,textarea{
+    padding: 5px;
+    width:210px;
+}
+#address{
+    resize:none;
+    margin: 0px;
+}
+label[for="M"],label[for="F"]{
+    padding: 5px;
+    display:inline-block;
+    width:60px;
+    text-align:left;
+}
+@media screen and (min-width: 1050px) {
+    label{
+        width: 190px;
+        font-size: 20px;
+    }
+    input,select,textarea{
+        font-size:18px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+}
+@media screen and (max-width: 1000px){
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:200px;
+    }
+}
+@media screen and (max-width: 936px) {
+    #gen{
+        display:block;
+        
+    }
+    #gen+br{
+        display:none;
+    }
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:215px;
+    }
+}
+@media screen and (max-width: 500px) {
+    label{
+        width: 130px;
+        font-size: 15px;
+    }
+    input,select,textarea{
+        font-size:13px;
+    }
+    label[for="M"],label[for="F"]{
+        width:60px;
+    }
+    input[type="password"],input[type="text"],input[type="date"],select,textarea{
+        width:auto;
+    }
+}
+@media screen and (max-width: 350px) {
+    label{
+        width: 110px;
+        font-size: 11px;
+    }
+    input,select,textarea{
+        font-size:9px;
+    }
+}
+/*Form Button*/
+.formCenter{
+    text-align:center;
+}
+#formButton{
+    margin: 2px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+    width:65px;
+}
+#formButton:focus{
+    outline:none;
+}
+.submit{
+    background-color:#28a745;
+    color:white;
+}
+.submit:hover{
+    background-color: #218838;
+    color:white;
+}
+.cancel{
+    background-color:#dc3545;
+    color:white;
+}
+.cancel:hover{
+    background-color:#c82333;
+    color:white;
+}
+.reset{
+    background-color:#ffc107;
+    color:black;
+}
+.reset:hover{
+    background-color:#e0a800;
+    color:black;
+}
+/*Error Message*/
+.error
+{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    list-style-position: inside;
+    border: 2px solid #FBC2C4;
+    background-color: #FBE3E4;
+    color: #8A1F11;
+}
+/*Confirmation message*/
+.confirmationMessage{
+    display:none;
+    background-color: #FFCC00;
+}
